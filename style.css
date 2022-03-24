@@ -19,6 +19,7 @@ header {
 }
 body {
   background-color: #3d3b5c;
+  overflow-x: hidden;
 }
 header img {
   width: 100%;
