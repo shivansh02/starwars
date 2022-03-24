@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img class="bg" src="./assets/img/asset1.svg" alt="" />
+      <img class="layer layer4" data-depth="0.01" src="./assets/img/asset2.svg" alt="" />
+      <img class="layer layer3" data-depth="0.3" src="./assets/img/newasset.svg" alt="" />
+      <img class="layer layer2" data-depth="0.6" src="./assets/img/new4.svg" alt="" />
+      <img
+        class="layer layer1"
+        data-depth="0.9"
+        src="./assets/img/asset5extended.svg"
+        alt=""
+      />
+    </header>
+    <main>
+      <h1>Gameplay Trailer</h1>
+      <iframe
+        width="1000"
+        height="500"
+        src="https://www.youtube.com/embed/VsAsZy7vk78?controls=0?autoplay=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <h1 style="margin-top: 2rem">Available Now 0n</h1>
+
+      <div class="download-links" style="position: relative">
+        <img
+          src="./assets/img/bgAsset2.svg"
+          style="
+            position: absolute;
+            z-index: -1;
+            width: 50%;
+            right: 0%;
+            top: -90vh;
+          "
+          alt=""
+        />
+        <div class="card ps5">
+          <img src="./assets/img/ps5.png" alt="" />
+        </div>
+        <div class="card xbox">
+          <img src="./assets/img/xbox.png" alt="" />
+        </div>
+        <div class="card steam">
+          <img src="./assets/img/steam.png" alt="" />
+        </div>
+      </div>
+      <h1 style="margin-top: 10vh">Latest Game News</h1>
+      <div class="news" style="position: relative">
+        <img
+          src="./assets/img/bgAsset1.svg"
+          style="
+            position: absolute;
+            z-index: -1;
+            width: 35%;
+            left: 5%;
+            top: 0px;
+          "
+          alt=""
+        />
+        <div class="news-card" style="flex: 2">
+          <div class="news-img">
+            <img src="./assets/img/man.jpg" alt="" />
+          </div>
+          <div class="news-title">
+            <h2>Stormtrooper given ability to do great things whatta wow!</h2>
+          </div>
+        </div>
+        <div class="news-card" style="flex: 1">
+          <div class="news-img">
+            <img src="./assets/img/vader.webp" alt="" height="250" />
+          </div>
+          <div class="news-title">
+            <h2>Stormtrooper given ability to do great things whatta wow!</h2>
+          </div>
+        </div>
+        <div class="news-card" style="flex: 1">
+          <div class="news-img">
+            <img src="./assets/img/robot.webp" alt="" height="250" />
+          </div>
+          <div class="news-title">
+            <h2>Stormtrooper given ability to do great things whatta wow!</h2>
+          </div>
+        </div>
+      </div>
+      <div
+        class="threedmodel"
+        style="
+          height: 80vh;
+          width: 100%;
+          display: flex;
+          margin-top: 15vh;
+          background-color: rgba(0, 0, 0, 0.5);
+          align-items: center;
+        "
+      >
+        <model-viewer
+          alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+          src="./assets/model/dancing_stormtrooper/scene.gltf"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          seamless-poster
+          shadow-intensity="1"
+          camera-controls
+          style="width: 50%; height: 90%"
+        ></model-viewer>
+        <div
+          class="model-text"
+          style="
+            align-self: flex-start;
+            margin-top: 5%;
+            width: 40%;
+            text-align: start;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8rem;
+          "
+        >
+          <h1>New Player Added to v1.2.2!</h1>
+          <h2>
+            The recent update adds Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Accusamus consequuntur officia exercitationem
+            voluptatibus odio, ipsa nulla ab alias vitae atque.
+          </h2>
+          <br /><br />
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              culpa!
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+              dicta!
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium, minima!
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+              dolorum?
+            </li>
+          </ul>
+          <button>Unlock Now</button>
+        </div>
+      </div>
+      <footer class="footer-section">
+        <div class="container">
+          <div class="footer-content pt-5 pb-5">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a href="index.html"
+                      ><img src="./assets/img/starwar.png" class="img-fluid" alt="logo"
+                    /></a>
+                  </div>
+
+                  <div class="footer-social-icon">
+                    <span>May the force be with you</span>
+                    <a href="#"
+                      ><i class="fab fa-facebook-f facebook-bg"></i
+                    ></a>
+                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                    <a href="#"
+                      ><i class="fab fa-google-plus-g google-bg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>Navigation</h3>
+                  </div>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Patch Notes</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers @ Star Wars</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>Subscribe to Newsletter</h3>
+                  </div>
+                  <div class="footer-text mb-25">
+                    <p>
+                      Don’t miss to subscribe to our new feeds, kindly fill the
+                      form below.
+                    </p>
+                  </div>
+                  <div class="subscribe-form">
+                    <form action="#">
+                      <input type="text" placeholder="Email Address" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                <div class="copyright-text">
+                  <p>
+                    Copyright &copy; 2018, All Right Reserved
+                    <a href="">George Lucas</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                <div class="footer-menu">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./main.js">
+
+    </script>
+  </body>
+</html>
